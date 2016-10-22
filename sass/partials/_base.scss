@@ -1,0 +1,85 @@
+/* ------------------ BASE STYLES ------------------ */
+
+// import compass
+@import "compass/css3";
+
+
+// all variables
+$base-font-family: "Open Sans", sans-serif;
+$base-font-size: 16px;
+$base-font-weight: 300;
+$secondary-font-family: "Dosis", sans-serif;
+
+// all variables time line
+$main-text: #7f8c97; // main text
+$link: #acb7c0; // anchor tags
+$background: #e9f0f5; // body background color
+$color-1: #303e49; // blue dark
+$color-2: #c03b44; // red
+$color-3: #ffffff; // white
+$color-4: #75ce66; // green
+$color-5: #f0ca45; // yellow
+$primary-font: $base-font-family;
+$secondary-font: $secondary-font-family;
+
+// general theme colors
+$section-bg-color-default: #fafafa;
+$section-bg-color-alternate: #f5f5f5;
+$section-bg-most-dark: #4d4d4d;
+$primary-accent-color: #BF0310;
+$secondary-accent-color: #BF0310;//31b0d5
+$heading-text-color: #646464;
+$subheading-text-color: #4d4d4d;
+$body-text-color: #777;
+$horizontal-line-color: #acacac;
+
+// special colors
+$portfolio-filter-bg-color: #e2e2e2;
+$portfolio-filter-bg-active-color: $primary-accent-color;
+$portfolio-filter-link-color: #9a9a9a;
+
+// screen breakpoint (bootstrap)
+$screen-xsmall: 480px;
+$screen-small: 768px;
+$screen-medium: 992px;
+$screen-large: 1200px;
+
+// import all modules
+@import "../modules/all";
+
+html, body {
+	height: 100%;
+	width: 100%;
+}
+
+body {	
+	font: {
+		family: $base-font-family;
+		size: $base-font-size;
+		weight: $base-font-weight;
+	}
+
+	color: $body-text-color;
+	background-color: #fff;
+	line-height: 1.6;
+
+	&.fullscreen-image-background {
+		background: {
+			image: image-url('sliders/Banner1.jpg');
+			size: cover;
+			repeat: no-repeat;
+			position: center center;
+		}
+
+		@include min-screen(1025px) {
+			background-attachment: fixed;
+		}
+	}
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: $secondary-font-family;
+	font-weight: 300;
+	color: $heading-text-color;
+	margin-top: 0;
+}

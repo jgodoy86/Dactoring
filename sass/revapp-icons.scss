@@ -1,0 +1,153 @@
+@font-face {
+    font-family: 'revapp-icons';
+    src:    url('../fonts/revapp-icons.eot?hubvkc');
+    src:    url('../fonts/revapp-icons.eot?hubvkc#iefix') format('embedded-opentype'),
+        url('../fonts/revapp-icons.ttf?hubvkc') format('truetype'),
+        url('../fonts/revapp-icons.woff?hubvkc') format('woff'),
+        url('../fonts/revapp-icons.svg?hubvkc#revapp-icons') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="ricon-"], [class*=" ricon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'revapp-icons' !important;
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color: #BF0411;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.ricon- {
+    &android:before {
+        content: "\e900";
+    }
+    &app:before {
+        content: "\e901";
+    }
+    &apple:before {
+        content: "\e902";
+    }
+    &appWeb:before {
+        content: "\e903";
+    }
+    &car:before {
+        content: "\e904";
+    }
+    &config:before {
+        content: "\e905";
+    }
+    &confused:before {
+        content: "\e906";
+    }
+    &desktop:before {
+        content: "\e907";
+    }
+    &doc:before {
+        content: "\e908";
+    }
+    &docs:before {
+        content: "\e909";
+    }
+    &downloadMoney:before {
+        content: "\e90a";
+    }
+    &easy:before {
+        content: "\e90b";
+    }
+    &graphic-1:before {
+        content: "\e90c";
+    }
+    &graphic-2:before {
+        content: "\e90d";
+    }
+    &hard:before {
+        content: "\e90e";
+    }
+    &hibrid:before {
+        content: "\e90f";
+    }
+    &idea-1:before {
+        content: "\e910";
+    }
+    &idea-2:before {
+        content: "\e911";
+    }
+    &idea-3:before {
+        content: "\e912";
+    }
+    &ligth:before {
+        content: "\e913";
+    }
+    &mark:before {
+        content: "\e914";
+    }
+    &medium:before {
+        content: "\e915";
+    }
+    &megaphone:before {
+        content: "\e916";
+    }
+    &message:before {
+        content: "\e917";
+    }
+    &mobile:before {
+        content: "\e918";
+    }
+    &money:before {
+        content: "\e919";
+    }
+    &no:before {
+        content: "\e91a";
+    }
+    &notify:before {
+        content: "\e91b";
+    }
+    &point:before {
+        content: "\e91c";
+    }
+    &reload:before {
+        content: "\e91d";
+    }
+    &rightIdea:before {
+        content: "\e91e";
+    }
+    &software:before {
+        content: "\e91f";
+    }
+    &tablet:before {
+        content: "\e920";
+    }
+    &timer:before {
+        content: "\e921";
+    }
+    &timer-1:before {
+        content: "\e922";
+    }
+    &timers:before {
+        content: "\e923";
+    }
+    &twitter:before {
+        content: "\e924";
+    }
+    &web:before {
+        content: "\e925";
+    }
+    &windows:before {
+        content: "\e926";
+    }
+    &yes:before {
+        content: "\e927";
+    }
+    &youtube:before {
+        content: "\e928";
+    }
+}
+

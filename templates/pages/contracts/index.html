@@ -1,0 +1,43 @@
+<section>
+  <div class="container">
+      <div class="row">
+        <div class="contact_form col-sm-8 col-md-8">
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <h1>Contratos</h1>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a ng-href="#/contracts/new"> <h3> Nuevo Contrato </h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table>
+          <tr>
+              <th> CODIGO CONTRATO </th>
+              <th> NOMBRE </th>
+              <th> EMPRESA  </th>
+              <th> FECHA INICIO </th>
+              <th> FECHA TERMINACION </th>
+              <th> ESTADO </th>
+          </tr>
+          <tr ng-repeat="contract in contracts">
+              <td> {{contract.code}} </td>
+              <td> {{contract.name}} </td>
+              <td> {{contract.company}} </td>
+              <td> {{contract.start_date}} </td>
+              <td> {{contract.end_date}} </td>
+              <td> {{contract.state}} </td>
+          </tr>
+      </table>
+
+    </div>
+  </section>
+
+
+
+
+
+
+

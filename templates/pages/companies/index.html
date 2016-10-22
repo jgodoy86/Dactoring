@@ -1,0 +1,46 @@
+<section>
+  <div class="container">
+      <div class="row">
+        <div class="contact_form col-sm-8 col-md-8">
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <h1>Compañias </h1>
+            </div>
+            <div class="col-sm-6 col-md-6">
+                <a ng-href="#/companies/new"> <h3> Nueva Compañia </h3></a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <table>
+          <tr>
+              <th> CODIGO DE EMPRESA </th>
+              <th> NIT </th>
+              <th> DIGITO VERIFICACION  </th>
+              <th> RAZON SOCIAL  </th>
+              <th> NOMBRE COMERCIAL  </th>
+              <th> PAGINA WEB  </th>
+              <th> TIPO CONTRIBUYENTE  </th>
+              <th> SEDE  </th>
+              <th> DIRECCION  </th>          
+              <th> TELEFONO  </th>             
+              <th> CELULAR  </th>
+          </tr>
+          <tr ng-repeat="company in companies">
+              <td> {{company.company_code}} </td>
+              <td> {{company.nit}} </td>
+              <td> {{company.verification_digit }} </td>
+              <td> {{company.social_reason }} </td>
+              <td> {{company.commercial_name }} </td>
+              <td> {{company.web_page }} </td>
+              <td> {{company.contributor_type }} </td>
+              <td> {{company.headquarters }} </td>
+              <td> {{company.address }} </td>          
+              <td> {{company.phone }} </td>             
+              <td> {{company.cellphone }} </td>
+          </tr>
+      </table>
+
+    </div>
+  </section>
