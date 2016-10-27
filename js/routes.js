@@ -52,6 +52,14 @@ angular.module('Dactoring')
       templateUrl: 'templates/pages/atention_areas/new.html',
       controller: 'AtentionAreaNewController'
     })
+    .when('/specialties', {
+      templateUrl: 'templates/pages/specialties/index.html',
+      controller: 'SpecialtyIndexController'
+    })
+    .when('/specialties/new', {
+      templateUrl: 'templates/pages/specialties/new.html',
+      controller: 'SpecialtyNewController'
+    })
     .otherwise({
       redirectTo: '/'
     });

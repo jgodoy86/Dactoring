@@ -3,4 +3,12 @@ angular.module('Dactoring',
   'ngTable', 
   'ui.bootstrap',
   'picardy.fontawesome',
-  'angular-scroll-animate']);
+  'angular-scroll-animate',
+  'ngFabForm'])
+	.config(function (ngFabFormProvider)
+    {
+      ngFabFormProvider.extendConfig({
+          scrollToAndFocusFirstErrorOnSubmit: false,
+          setNovalidate: false
+      });
+    });

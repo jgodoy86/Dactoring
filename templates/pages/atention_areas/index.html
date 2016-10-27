@@ -13,28 +13,15 @@
         </div>
       </div>
 
-      <table>
-          <tr>
-              <th> CODIGO EMPRESA</th>
-              <th> CODIGO PABELLON</th>
-              <th> CODIGO AREA</th>
-              <th> NOMBRE AREA</th>
-              <th> TIPO </th>
-              <th> HORA INICIO</th>
-              <th> HORA FINAL</th>
-              <th> ESTADO</th>
 
-          </tr>
-          <tr ng-repeat="atention_area in atention_areas">
-              <td> {{atention_area.company_code}} </td>
-              <td> {{atention_area.pabillion_code}} </td>
-              <td> {{atention_area.area_code}} </td>
-              <td> {{atention_area.area_name}} </td>
-              <td> {{atention_area.type}} </td>
-              <td> {{atention_area.start_hour}} </td>
-              <td> {{atention_area.end_hour}} </td>
-              <td> {{atention_area.state}} </td>
-          </tr>
+      <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="atention_area in atention_areas">
+          <td data-title="'NOMBRE AREA'">{{atention_area.area_name}}</td>
+          <td data-title="'TIPO'">{{atention_area.type}}</td>
+          <td data-title="'FECHA INICO'"> {{atention_area.start_hour}} </td>    
+          <td data-title="'FECHA FINALIZACIÓN'"> {{atention_area.end_hour}} </td>        
+          <td data-title="'ESTADO'"> {{atention_area.state}} </td> 
+        </tr>
       </table>
 
     </div>
