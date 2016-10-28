@@ -1,0 +1,30 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1>Agendas </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/agendas/new"> <h3> Agregar Agenda </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <table ng-table="table" class="table table-striped">
+      <tr ng-repeat="agenda in agendas">
+        <td data-title="'CÓDIGO AGENDA'">{{agenda.agenda_code}}</td>
+        <td data-title="'NOMBRE AREA'">{{agenda.name}}</td>
+        <td data-title="'DIA'">{{agenda.day}}</td>
+        <td data-title="'HORA INICIO'"> {{agenda.start_hour}} </td>    
+        <td data-title="'HORA FINALIZACIÓN'"> {{agenda.end_hour}} </td>  
+        <td data-title="'NÚMERO MÁXIMO DE PACIENTES'">{{agenda.max_patients}}</td>  
+        <td data-title="'CÓDIGO CONSULTORIO'"> {{agenda.consultory_code}} </td>         
+        <td data-title="'ESTADO AGENDA'"> {{agenda.agenda_state}} </td> 
+      </tr>
+    </table>
+  </div>
+</section>

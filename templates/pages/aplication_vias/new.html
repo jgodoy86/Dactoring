@@ -1,0 +1,41 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Vía de Aplicación </h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/aplication_vias"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form data-ng-submit="add(aplication_via)" required>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO </label>
+                  <input ng-model="aplication_via.code" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> SEXO </label>
+                  <select ng-model="aplication_via.sex" class="form-control"  required>
+                    <option> MASCULINO </option>
+                    <option> FEMENINO </option>
+                    <option> AMBOS </option>
+                  </select>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-8 col-md-8">
+                <label> DESCRIPCIÓN </label>
+                <textarea ng-model="aplication_via.description" class="form-control"  required></textarea>
+              </div>
+            </div>
+            
+            <div class="col-sm-12 col-md-12"><br/>
+              <input class="btn btn-primary" type="submit" value="Enviar"> 
+            </div>
+        </form>
+      </div>
+  </div>
+</section>

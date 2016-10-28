@@ -1,0 +1,25 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-14 col-md-14">
+        <div class="row">
+          <div class="col-sm-10 col-md-10">
+            <h1>Anatofarmacológicos </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/anatofarmacologics/new"> <h3> Agregar Anatofarmacológico </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+      <tr ng-repeat="anatofarmacologic in anatofarmacologics">
+        <td data-title="'CÓDIGO ANATOFARMACOLÓGICO'">{{anatofarmacologic.code}}</td>
+        <td data-title="'NOMBRE 1 '">{{anatofarmacologic.name_code_1}}</td>
+        <td data-title="'NOMBRE 2 '">{{anatofarmacologic.name_code_2}}</td>
+        <td data-title="'NOMBRE 3 '">{{anatofarmacologic.name_code_3}}</td>
+      </tr>
+    </table>
+  </div>
+</section>

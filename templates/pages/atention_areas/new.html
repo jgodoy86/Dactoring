@@ -1,6 +1,13 @@
 <section>
     <div class="container">
-    <h1>Areas de Atención </h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h1> Areas de Atención </h1>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <a href="#/atention_areas"> <h3>Volver</h3> </a>
+        </div>
+      </div>
       <div class="row">
         <div class="contact_form col-sm-8 col-md-8">
           <form name="contactForm" data-ng-submit="add(atention_area)" novalidate>
@@ -27,7 +34,11 @@
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>TIPO </label>
-                <input name="subject" required ng-model="atention_area.type" class="form-control" type="text">
+                <select name="subject" required ng-model="atention_area.type" class="form-control" type="text">
+                  <option>CONSULTORIO</option>
+                  <option>SALAS ESPECIALES</option>
+                  <option>QUIROFANO</option>
+                </select>
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>HORA INICIO</label>
@@ -41,7 +52,11 @@
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>ESTADO</label>
-                <input name="phone" required ng-model="atention_area.state" class="form-control" type="text">
+                <select name="phone" required ng-model="atention_area.state" class="form-control" type="text">
+                  <option>ACTIVO</option>
+                  <option>MANTENIMIENTO</option>
+                  <option>INACTIVO</option>
+                </select>
               </div>
             </div>
             <div class="row">

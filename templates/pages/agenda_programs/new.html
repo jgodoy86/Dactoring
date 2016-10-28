@@ -1,0 +1,93 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Programación de Agenda </h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/agenda_programs"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form name="contactForm" data-ng-submit="add(agenda_program)" novalidate>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label>CÓDIGO AGENDA </label>
+              <input name="subject" required ng-model="agenda_program.agenda_code" class="form-control" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label>CÓDIGO MÉDICO </label>
+              <input name="phone" required ng-model="agenda_program.medic_code" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label>CÓDIGO ESPECIALIDAD </label>
+              <input name="subject" required ng-model="agenda_program.specialty_code" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label>CÓDIGO CONSULTORIO </label>
+              <input required ng-model="agenda_program.consultory_code" type="text" class="form-control" >
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label>FECHA Y HORA DE SOLICITUD DEL PACIENTE </label>
+              <input value="2012-06-15 14:45" readonly required ng-model="agenda_program.date_time_patient" type="text" class="form-control form_datetime">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label> FECHA Y HORA ASIGNACIÓN DE CITA </label> 
+              <input value="2012-06-15 14:45" readonly required ng-model="agenda_program.date_time_appointment" class="form-control form_datetime" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label> FECHA Y HORA DE REGISTRO DEL SISTEMA  </label>
+              <input value="2012-06-15 14:45" readonly required ng-model="agenda_program.date_time_system" class="form-control form_datetime" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label> IDENTIFICACIÓN DEL PACIENTE </label>
+              <input required ng-model="agenda_program.patient_id" class="form-control" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label>TIPO DOCUMENTO</label>
+              <select required ng-model="agenda_program.patient_type_id" class="form-control" type="text">
+                <option> CC </option>
+                <option> CE </option>
+                <option> RC </option>
+                <option> MSI </option>
+                <option> ASI </option>
+                <option> TI </option>
+              </select> 
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label> CONTRATO AFILIACIÓN DEL PACIENTE </label>
+              <input required ng-model="agenda_program.patient_affiliation_contract" class="form-control" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label> PROCEDIMIENTO AGENDADO </label>
+              <input required ng-model="agenda_program.appointment_state" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label> TIEMPO DE CONSULTA </label>
+              <input required ng-model="agenda_program.petition_time" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12"><br/>
+              <input class="btn btn-primary" type="submit" value="Enviar"> 
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

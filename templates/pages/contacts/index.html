@@ -14,24 +14,14 @@
       </div>
       
         
-      <table>
-          <tr>
-              <th> CONTACTO </th>
-              <th> CARGO </th>
-              <th> TELEFONO  </th>
-              <th> MOVIL </th>
-              <th> MAIL  </th>
-              <th> DIRECCION </th>
-          </tr>
-          <tr ng-repeat="contact in contacts">
-              <td> {{contact.message}} </td>
-              <td> {{contact.position}} </td>
-              <td> {{contact.phone }} </td>
-              <td> {{contact.cellphone }} </td>
-              <td> {{contact.email }} </td>
-              <td> {{contact.address }} </td>
-          </tr>
-      </table>
-
+      <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="contact in contacts">
+          <td data-title="'MENSAJE'">{{contact.message}}</td>
+          <td data-title="'POSICIÓN'">{{contact.position}}</td>
+          <td data-title="'CELULAR'"> {{contact.cellphone  }} </td>          
+          <td data-title="'EMAIL'"> {{contact.email }} </td> 
+          <td data-title="'DIRECCION'"> {{contact.address}} </td>
+        </tr>
+      </table> 
     </div>
   </section>

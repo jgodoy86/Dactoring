@@ -1,6 +1,14 @@
 <section>
     <div class="container">
-    <h1> Paciente </h1>
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h1> Paciente </h1>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <a href="#/patients"> <h3>Volver</h3> </a>
+        </div>
+      </div>
+
       <div class="row">
         <div class="contact_form col-sm-8 col-md-8">
           <form name="contactForm" data-ng-submit="add(patient)" novalidate>
@@ -13,7 +21,14 @@
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>TIPO DOCUMENTO</label>
-                <input name="phone" required ng-model="patient.document_type" class="form-control" type="text">
+                <select name="phone" required ng-model="patient.document_type" class="form-control" type="text">
+                  <option> CC </option>
+                  <option> CE </option>
+                  <option> RC </option>
+                  <option> MSI </option>
+                  <option> ASI </option>
+                  <option> TI </option>
+                </select> 
               </div>
             </div>
 
@@ -42,7 +57,13 @@
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>ATENCION ESPECIAL </label>
-                <input name="subject" required ng-model="patient.special_atention" class="form-control" type="text">
+                <select name="subject" required ng-model="patient.special_atention" class="form-control" type="text">
+                <option> NO APLICA </option>
+                <option> NEGRO </option>
+                <option> INDIGENA </option>
+                <option> DESPLAZADO </option>
+                <option> OTRO </option>
+                </select>
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> PAIS  </label>
@@ -90,7 +111,10 @@
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> ESTADO NIVEL EDUCATIVO </label>
-                <input name="phone" required ng-model="patient.education_level_state" class="form-control" type="text">
+                <select name="phone" required ng-model="patient.education_level_state" class="form-control" type="text">
+                  <option> COMPLETO </option>
+                  <option> INCOMPLETO </option>
+                </select>
               </div>
             </div>
 
@@ -101,7 +125,13 @@
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> NIVEL EDUCATIVO </label>
-                <input name="phone" required ng-model="patient.education_level" class="form-control" type="text">
+                <select name="phone" required ng-model="patient.education_level" class="form-control" type="text">
+                  <option> ACADEMICO </option>
+                  <option> BACHILLER </option>
+                  <option> PREFESIONAL </option>
+                  <option> TÉCNICO </option>
+                  <option> TÉCNOLOGO </option>
+                </select>
               </div>
             </div>
 

@@ -1,0 +1,95 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Médico </h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/medics"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form data-ng-submit="add(medic)" required>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO MÉDICO</label>
+                  <input ng-model="medic.medic_code" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> IDENTIFICACIÓN </label>
+                  <input ng-model="medic.medic_id" class="form-control"  required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> TIPO IDENTIFICACIÓN </label>
+                  <select name="phone" required ng-model="medic.id_type" class="form-control" type="text">
+                    <option> CC </option>
+                    <option> CE </option>
+                    <option> RC </option>
+                    <option> MSI </option>
+                    <option> ASI </option>
+                    <option> TI </option>
+                  </select> 
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> PRIMER NOMBRE </label>
+                  <input ng-model="medic.first_name1" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> SEGUNDO NOMBRE </label>
+                  <input ng-model="medic.first_name2" class="form-control"  required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> PRIMER APELLIDO </label>
+                  <input ng-model="medic.last_name1" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> SEGUNDO APELLIDO </label>
+                  <input ng-model="medic.last_name2" class="form-control"  required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> REGISTRO MÉDICO </label>
+                  <input ng-model="medic.medical_record" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> TELÉFONO </label>
+                  <input ng-model="medic.phone" class="form-control"  required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> MÓVIL </label>
+                  <input ng-model="medic.cellphone" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> EMAIL </label>
+                  <input ng-model="medic.email" class="form-control"  required>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> MANEJA AGENDA </label>
+                  <input ng-model="medic.agend_management" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO ESPECIALIDAD </label>
+                  <input ng-model="medic.specialty_code" class="form-control"  required>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <input class="btn btn-primary" type="submit" value="Enviar"> 
+              </div>
+            </div>
+        </form>
+      </div>
+  </div>
+</section>

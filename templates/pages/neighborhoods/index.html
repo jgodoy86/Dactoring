@@ -1,0 +1,26 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Barrios </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/neighborhoods/new"> <h3> Agregar Barrio </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="neighborhood in neighborhoods">
+            <td data-title="' CÓDIGO DEPARTAMENTO'"> {{neighborhood.department_code}} </td>
+            <td data-title="' CÓDIGO MUNICIPIO'"> {{neighborhood.municipality_code}} </td>
+            <td data-title="' CÓDIGO BARRIO'"> {{neighborhood.code}} </td>
+            <td data-title="' NOMBRE'"> {{neighborhood.name}} </td>
+            <td data-title="' ZONA'"> {{neighborhood.zone}} </td>
+        </tr>
+    </table>
+  </div>
+</section>

@@ -3,9 +3,8 @@ angular.module('Dactoring')
   
   $scope.add = function(){
     
-      Crud.create($scope.atention_area, 'atention_areas').success(function(data){
-        $scope.atention_area = {};
-      });
-    
+    Crud.create($scope.atention_area, 'atention_areas').success(function(data){
+      $scope.atention_area = {};
+    });
   };
 }]);

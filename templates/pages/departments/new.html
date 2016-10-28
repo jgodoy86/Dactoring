@@ -1,0 +1,38 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Departamento </h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/departments"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form data-ng-submit="add(department)" required>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO PAÍS</label>
+                  <input ng-model="department.country_code" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO </label>
+                  <input ng-model="department.code" class="form-control"  required>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> NOMBRE </label>
+                <input ng-model="department.name" class="form-control"  required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <input class="btn btn-primary" type="submit" value="Enviar"> 
+              </div>
+            </div>
+        </form>
+      </div>
+  </div>
+</section>

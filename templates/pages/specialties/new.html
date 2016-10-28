@@ -1,29 +1,36 @@
 <section>
     <div class="container">
-    <h1> Especialidad </h1>
-    <div class="row">
-      <div class="contact_form col-sm-8 col-md-8">
-        <form data-ng-submit="add(specialty)" required>
-            <div class="row">
-                <div class="col-sm-6 col-md-6">
-                  <label> CÓDIGO </label>
-                  <input ng-model="specialty.code" class="form-control" required>
-                </div>
-                <div class="col-sm-6 col-md-6">
-                  <label> NOMBRE </label>
-                  <input ng-model="specialty.name" class="form-control"  required>
-                </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6 col-md-6">
-                <label> ESTADO </label>
-                <input ng-model="specialty.state" class="form-control"  required>
-              </div>
-            </div>
-            <div class="col-sm-12 col-md-12"><br/>
-              <input class="btn btn-primary" type="submit" value="Enviar"> 
-            </div>
-        </form>
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h1> Especialidad </h1>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <a href="#/specialties"> <h3>Volver</h3> </a>
+        </div>
       </div>
+      <div class="row">
+        <div class="contact_form col-sm-8 col-md-8">
+          <form data-ng-submit="add(specialty)" required>
+              <div class="row">
+                  <div class="col-sm-6 col-md-6">
+                    <label> CÓDIGO </label>
+                    <input ng-model="specialty.code" class="form-control" required>
+                  </div>
+                  <div class="col-sm-6 col-md-6">
+                    <label> NOMBRE </label>
+                    <input ng-model="specialty.name" class="form-control"  required>
+                  </div>
+              </div>
+              <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> ESTADO </label>
+                  <input ng-model="specialty.state" class="form-control"  required>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-12"><br/>
+                <input class="btn btn-primary" type="submit" value="Enviar"> 
+              </div>
+          </form>
+        </div>
     </div>
   </section>

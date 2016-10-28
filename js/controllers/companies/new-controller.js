@@ -3,9 +3,8 @@ angular.module('Dactoring')
   
   $scope.add = function(){
     
-      Crud.create($scope.company, 'companies').success(function(data){
-        $scope.company = {};
-      });
-    
+    Crud.create($scope.company, 'companies').success(function(data){
+      $scope.company = {};
+    });
   };
 }]);

@@ -1,0 +1,29 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Programación Agenda </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/agenda_programs/new"> <h3> Agregar Programación de Agenda </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <table ng-table="table" class="table table-striped">
+      <tr ng-repeat="agenda_program in agenda_programs">
+        <td data-title="'CÓDIGO AGENDA'">{{agenda_program.agenda_code}}</td>
+        <td data-title="'CÓDIGO MÉDICO'">{{agenda_program.medic_code}}</td>
+        <td data-title="'FECHA Y HORA SOLICITUD'">{{agenda_program.date_time_patient}}</td>
+        <td data-title="'FECHA Y HORA ASIGNACIÓN'"> {{agenda_program.date_time_appointment}} </td>    
+        <td data-title="'FECHA Y HORA REGISTRO'"> {{agenda_program.date_time_system}} </td>  
+        <td data-title="'ESTADO DE LA CITA'">{{agenda_program.appointment_state}}</td>  
+        <td data-title="'TIEMPO DE CONSULTA'"> {{agenda_program.petition_time}} </td>
+      </tr>
+    </table>
+  </div>
+</section>

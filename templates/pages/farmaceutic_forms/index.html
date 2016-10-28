@@ -1,0 +1,24 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Fórmula Farmacéutica </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/farmaceutic_forms/new"> <h3> Agregar Fórmula Farmacéutica </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="farmaceutic_form in farmaceutic_forms">
+            <td data-title="' CÓDIGO'"> {{farmaceutic_form.code}} </td>
+            <td data-title="' DESCRIPCIÓN'"> {{farmaceutic_form.description}} </td>
+            <td data-title="' CÓDIGO APLICACIÓN'"> {{farmaceutic_form.aplication_code}} </td>
+        </tr>
+    </table>
+  </div>
+</section>

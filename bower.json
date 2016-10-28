@@ -23,6 +23,8 @@
     "angular-bootstrap": "^1.2.5",
     "angular-aside": "^1.3.2",
     "angular-fontawesome": "^1.0.0",
-    "ng-fab-form": "^1.2.20"
+    "ng-fab-form": "^1.2.20",
+    "bootstrap-timepicker" : "^0.5.2",
+    "smalot-bootstrap-datetimepicker" : "^2.3.11"
   }
 }

@@ -1,0 +1,24 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Departamentos </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/departments/new"> <h3> Agregar Departamento </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="department in departments">
+            <td data-title="' CÓDIGO PAÍS'"> {{department.country_code}} </td>
+            <td data-title="' CÓDIGO'"> {{department.code}} </td>
+            <td data-title="' NOMBRE'"> {{department.name}} </td>
+        </tr>
+    </table>
+  </div>
+</section>

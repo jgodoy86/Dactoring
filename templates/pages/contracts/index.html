@@ -13,22 +13,12 @@
         </div>
       </div>
 
-      <table>
-          <tr>
-              <th> CODIGO CONTRATO </th>
-              <th> NOMBRE </th>
-              <th> EMPRESA  </th>
-              <th> FECHA INICIO </th>
-              <th> FECHA TERMINACION </th>
-              <th> ESTADO </th>
-          </tr>
+      <table ng-table="table" class="table table-striped">
           <tr ng-repeat="contract in contracts">
-              <td> {{contract.code}} </td>
-              <td> {{contract.name}} </td>
-              <td> {{contract.company}} </td>
-              <td> {{contract.start_date}} </td>
-              <td> {{contract.end_date}} </td>
-              <td> {{contract.state}} </td>
+              <td data-title="' CÓDIGO'"> {{contract.code}} </td>
+              <td data-title="' NOMBRE'"> {{contract.name}} </td>
+              <td data-title="' COMPAÑIA'"> {{contract.company}} </td>
+              <td data-title="' ESTADO'"> {{contract.state}} </td>
           </tr>
       </table>
 

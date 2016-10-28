@@ -1,0 +1,92 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Agenda </h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/agendas"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form name="contactForm" data-ng-submit="add(agenda)" novalidate>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label>CODIGO AGENDA </label>
+              <input name="subject" required ng-model="agenda.agenda_code" class="form-control" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label>NOMBRE </label>
+              <input name="phone" required ng-model="agenda.name" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label>DÍA</label>
+              <select name="subject" required ng-model="agenda.day" class="form-control" type="text">
+                <option>LUNES</option>
+                <option>MARTES</option>
+                <option>MIÉRCOLES</option>
+                <option>JUEVES</option>
+                <option>VIERNES</option>
+                <option>SÁBADO</option>
+                <option>DOMINGO</option>
+              </select>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <div class="bootstrap-timepicker timepicker">
+                <label>HORA INICIO</label>
+                <input id="timepicker1" required ng-model="agenda.start_hour" type="text" class="form-control" placeholder="12:45 PM">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <div class="bootstrap-timepicker timepicker">
+                <label>HORA FINAL</label>
+                <input id="timepicker2" required ng-model="agenda.end_hour" type="text" class="form-control" placeholder="12:45 PM">
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label>TIEMPO CONSULTA </label>
+              <input required ng-model="agenda.petition_time" class="form-control" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label> NÚMERO MÁXIMO DE PACIENTES POR DÍA </label>
+              <input required ng-model="agenda.max_patients" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label> CÓDIGO MÉDICO </label>
+              <input required ng-model="agenda.medic_code" class="form-control" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label> CÓDIGO ESPECIALIDAD </label>
+              <input required ng-model="agenda.specialty_code" class="form-control" type="text">
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-sm-6 col-md-6">
+              <label> CÓDIGO CONSULTORIO </label>
+              <input required ng-model="agenda.consultory_code" class="form-control" type="text">
+            </div>
+            <div class="col-sm-6 col-md-6">
+              <label> ESTADO AGENDA </label>
+              <input required ng-model="agenda.agenda_state" class="form-control" type="text">
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-12 col-md-12"><br/>
+              <input class="btn btn-primary" type="submit" value="Enviar"> 
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>

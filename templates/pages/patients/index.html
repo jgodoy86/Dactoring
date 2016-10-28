@@ -13,56 +13,15 @@
         </div>
       </div>
 
-      <table>
-          <tr>
-              <th> NUMERO DE IDENTIFICACION </th>
-              <th> TIPO DOCUMENTO </th>
-              <th> APELLIDO1 </th>
-              <th> APELLIDO2 </th>
-              <th> NOMBRE1 </th>
-              <th> NOMBRE2 </th>
-              <th> ATENCION ESPECIAL </th>
-              <th> PAIS </th>
-              <th> DEPARTAMENTO </th>
-              <th> MUNICIPIO </th>
-              <th> BARRIO </th>
-              <th> CORREO </th>
-              <th> DIRECCION </th>
-              <th> EMPRESA DONDE TRABAJA </th>
-              <th> ESTADO CIVIL </th>
-              <th> ESTADO NIVEL EDUCATIVO </th>
-              <th> FECHA NACIMIENTO </th>
-              <th> NIVEL EDUCATIVO </th>
-              <th> OCUPACION </th>
-              <th> PROFESION </th>
-              <th> SEXO </th>
-              <th> TELEFONO </th>
-              <th> TELEFONO OFICINA </th>
-          </tr>
+      <table ng-table="table" class="table table-striped">
           <tr ng-repeat="patient in patients">
-              <td> {{patient.number_id}} </td>
-              <td> {{patient.document_type}} </td>
-              <td> {{patient.last_name1}} </td>
-              <td> {{patient.last_name2}} </td>
-              <td> {{patient.first_name1}} </td>
-              <td> {{patient.first_name2}} </td>
-              <td> {{patient.special_atention}} </td>
-              <td> {{patient.country}} </td>
-              <td> {{patient.department}} </td>
-              <td> {{patient.municipality}} </td>
-              <td> {{patient.neighborhood}} </td>
-              <td> {{patient.email}} </td>
-              <td> {{patient.address}} </td>
-              <td> {{patient.work_company}} </td>
-              <td> {{patient.marital_status}} </td>
-              <td> {{patient.education_level_state}} </td>
-              <td> {{patient.birthday}} </td>
-              <td> {{patient.education_level}} </td>
-              <td> {{patient.ocupation}} </td>
-              <td> {{patient.profession}} </td>
-              <td> {{patient.sex}} </td>
-              <td> {{patient.phone}} </td>
-              <td> {{patient.office_phone}} </td>
+              <td data-title="' NUMERO DE IDENTIFICACION '"> {{patient.number_id}} </td>
+              <td data-title="' TIPO DOCUMENTO'"> {{patient.document_type}} </td>
+              <td data-title="' APELLIDO1'"> {{patient.last_name1}} </td>
+              <td data-title="' NOMBRE1'"> {{patient.first_name1}} </td>
+              <td data-title="' DEPARTAMENTO'"> {{patient.department}} </td>
+              <td data-title="' OCUPACION'"> {{patient.ocupation}} </td>
+              <td data-title="' TELEFONO'"> {{patient.phone}} </td>
           </tr>
       </table>
 

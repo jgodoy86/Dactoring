@@ -1,0 +1,56 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Anatofarmacológicos </h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/anatofarmacologics"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form data-ng-submit="add(anatofarmacologic)" required>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO </label>
+                  <input ng-model="anatofarmacologic.code" class="form-control" required>
+                </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO NIVEL 1 </label>
+                <input ng-model="anatofarmacologic.code_lvl_1" class="form-control"  required>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> NOMBRE 1 </label>
+                <input ng-model="anatofarmacologic.name_code_1" class="form-control"  required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO NIVEL 2 </label>
+                <input ng-model="anatofarmacologic.code_lvl_2" class="form-control"  required>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> NOMBRE 2 </label>
+                <input ng-model="anatofarmacologic.name_code_2" class="form-control"  required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO NIVEL 3 </label>
+                <input ng-model="anatofarmacologic.code_lvl_3" class="form-control"  required>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> NOMBRE 3 </label>
+                <input ng-model="anatofarmacologic.name_code_3" class="form-control"  required>
+              </div>
+            </div>
+            <div class="col-sm-12 col-md-12"><br/>
+              <input class="btn btn-primary" type="submit" value="Enviar"> 
+            </div>
+        </form>
+      </div>
+  </div>
+</section>

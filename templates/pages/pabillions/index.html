@@ -13,18 +13,12 @@
         </div>
       </div>
 
-      <table>
-          <tr>
-              <th> CODIGO EMPRESA </th>
-              <th> CODIGO PABELLON </th>
-              <th> NOMBRE PABELLON </th>
-              <th> ESTADO </th>
-          </tr>
+      <table ng-table="table" class="table table-striped">
           <tr ng-repeat="pabillion in pabillions">
-              <td>{{pabillion.company_code}} </td>
-              <td>{{pabillion.code}} </td>
-              <td>{{pabillion.name}} </td>
-              <td>{{pabillion.state}} </td>
+              <td data-title="'CODIGO EMPRESA '"> {{pabillion.company_code}} </td>
+              <td data-title="'CODIGO PABELLON'"> {{pabillion.code}} </td>
+              <td data-title="'NOMBRE PABELLON'"> {{pabillion.name}} </td>
+              <td data-title="'ESTADO'"> {{pabillion.state}} </td>
           </tr>
       </table>
 
