@@ -10,37 +10,37 @@
       </div>
       <div class="row">
         <div class="contact_form col-sm-8 col-md-8">
-          <form name="contactForm" data-ng-submit="add(contact)" novalidate>
+          <form data-ng-submit="add(contact)" novalidate>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>Cargo</label>
-                <input name="email" required ng-model="contact.position" class="form-control" type="text" value="">
+                <input required ng-model="contact.position" class="form-control" type="text" value="">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>Celular</label>
-                <input name="subject" required ng-model="contact.cellphone" class="form-control" type="number">
+                <input required ng-model="contact.cellphone" class="form-control" type="number">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>Telefono</label>
-                <input name="phone" required ng-model="contact.phone" class="form-control" type="number">
+                <input required ng-model="contact.phone" class="form-control" type="number">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>Email</label>
-                <input name="subject" required ng-model="contact.email" class="form-control" type="email">
+                <input required ng-model="contact.email" class="form-control" type="email">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>Dirección</label>
-                <input name="phone" required ng-model="contact.address" class="form-control" type="text">
+                <input required ng-model="contact.address" class="form-control" type="text">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12 col-md-12">
                 <label>Mensaje</label>
-                <textarea name="message" required ng-model="contact.message" rows="8" class="form-control"></textarea>
+                <textarea required ng-model="contact.message" rows="8" class="form-control"></textarea>
               </div>
               <div class="col-sm-12 col-md-12"><br/>
                 <input class="btn btn-primary" type="submit" value="Enviar Contacto"> 

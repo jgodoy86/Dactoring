@@ -17,9 +17,9 @@
     <table ng-table="table" class="table table-striped">
       <tr ng-repeat="atention_area in atention_areas">
         <td data-title="'NOMBRE AREA'">{{atention_area.area_name}}</td>
-        <td data-title="'TIPO'">{{atention_area.type}}</td>
-        <td data-title="'FECHA INICO'"> {{atention_area.start_hour}} </td>    
-        <td data-title="'FECHA FINALIZACIÓN'"> {{atention_area.end_hour}} </td>        
+        <td data-title="'TIPO'">{{atention_area.atention_type}}</td>
+        <td data-title="'HORA INICO'"> {{atention_area.start_hour}} </td>    
+        <td data-title="'HORA FINALIZACIÓN'"> {{atention_area.end_hour}} </td>        
         <td data-title="'ESTADO'"> {{atention_area.state}} </td> 
       </tr>
     </table>

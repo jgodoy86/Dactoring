@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Grupo RIPS </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/rip_groups/new"> <h3> Agregar Grupo RIPS </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="rip_group in rip_groups">
+            <td data-title="' CÓDIGO'"> {{rip_group.code}} </td>
+            <td data-title="' NOMBRE'"> {{rip_group.description}} </td>
+        </tr>
+    </table>
+  </div>
+</section>

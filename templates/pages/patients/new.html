@@ -11,17 +11,17 @@
 
       <div class="row">
         <div class="contact_form col-sm-8 col-md-8">
-          <form name="contactForm" data-ng-submit="add(patient)" novalidate>
+          <form data-ng-submit="add(patient)" novalidate>
 
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>NUMERO DE IDENTIFICACION </label>
-                <input name="subject" required ng-model="patient.number_id" class="form-control" type="text">
+                <input required ng-model="patient.number_id" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>TIPO DOCUMENTO</label>
-                <select name="phone" required ng-model="patient.document_type" class="form-control" type="text">
+                <select required ng-model="patient.document_type" class="form-control" type="text">
                   <option> CC </option>
                   <option> CE </option>
                   <option> RC </option>
@@ -35,29 +35,29 @@
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>PRIMER APELLIDO </label>
-                <input name="subject" required ng-model="patient.last_name1" class="form-control" type="text">
+                <input required ng-model="patient.last_name1" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>SEGUNDO APELLIDO </label>
-                <input name="phone" required ng-model="patient.last_name2" class="form-control" type="text">
+                <input required ng-model="patient.last_name2" class="form-control" type="text">
               </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>PRIMER NOMBRE </label>
-                <input name="subject" required ng-model="patient.first_name1" class="form-control" type="text">
+                <input required ng-model="patient.first_name1" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>SEGUNDO NOMBRE </label>
-                <input name="phone" required ng-model="patient.first_name2" class="form-control" type="text">
+                <input required ng-model="patient.first_name2" class="form-control" type="text">
               </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>ATENCION ESPECIAL </label>
-                <select name="subject" required ng-model="patient.special_atention" class="form-control" type="text">
+                <select required ng-model="patient.special_atention" class="form-control" type="text">
                 <option> NO APLICA </option>
                 <option> NEGRO </option>
                 <option> INDIGENA </option>
@@ -67,51 +67,51 @@
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> PAIS  </label>
-                <input name="phone" required ng-model="patient.country" class="form-control" type="text">
+                <input required ng-model="patient.country" class="form-control" type="text">
               </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>DEPARTAMENTO </label>
-                <input name="subject" required ng-model="patient.department" class="form-control" type="text">
+                <input required ng-model="patient.department" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>MUNICIPIO   </label>
-                <input name="phone" required ng-model="patient.municipality" class="form-control" type="text">
+                <input required ng-model="patient.municipality" class="form-control" type="text">
               </div>
             </div>
  
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>BARRIO </label>
-                <input name="subject" required ng-model="patient.neighborhood" class="form-control" type="text">
+                <input required ng-model="patient.neighborhood" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> CORREO </label>
-                <input name="phone" required ng-model="patient.email" class="form-control" type="text">
+                <input required ng-model="patient.email" class="form-control" type="email">
               </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label> DIRECCION </label>
-                <input name="subject" required ng-model="patient.address" class="form-control" type="text">
+                <input required ng-model="patient.address" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> EMPRESA DONDE TRABAJA </label>
-                <input name="phone" required ng-model="patient.work_company" class="form-control" type="text">
+                <input required ng-model="patient.work_company" class="form-control" type="text">
               </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label> ESTADO CIVIL </label>
-                <input name="subject" required ng-model="patient.marital_status" class="form-control" type="text">
+                <input required ng-model="patient.marital_status" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> ESTADO NIVEL EDUCATIVO </label>
-                <select name="phone" required ng-model="patient.education_level_state" class="form-control" type="text">
+                <select required ng-model="patient.education_level_state" class="form-control" type="text">
                   <option> COMPLETO </option>
                   <option> INCOMPLETO </option>
                 </select>
@@ -121,11 +121,11 @@
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label> FECHA NACIMIENTO </label>
-                <input name="subject" required ng-model="patient.birthday" class="form-control" type="text">
+                <input required ng-model="patient.birthday" readonly class="form-control form_datetime" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> NIVEL EDUCATIVO </label>
-                <select name="phone" required ng-model="patient.education_level" class="form-control" type="text">
+                <select required ng-model="patient.education_level" class="form-control" type="text">
                   <option> ACADEMICO </option>
                   <option> BACHILLER </option>
                   <option> PREFESIONAL </option>
@@ -138,32 +138,36 @@
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label> OCUPACION </label>
-                <input name="subject" required ng-model="patient.ocupation" class="form-control" type="text">
+                <input required ng-model="patient.ocupation" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> PROFESION  </label>
-                <input name="phone" required ng-model="patient.profession" class="form-control" type="text">
+                <input required ng-model="patient.profession" class="form-control" type="text">
               </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label> SEXO </label>
-                <input name="subject" required ng-model="patient.sex" class="form-control" type="text">
+                <select required ng-model="patient.sex" class="form-control" type="text">
+                <option>MASCULINO</option>
+                <option>FEMENINO</option>
+                <option>OTRO</option>
+                </select>
               </div>
               <div class="col-sm-6 col-md-6">
                 <label> TELEFONO  </label>
-                <input name="phone" required ng-model="patient.phone" class="form-control" type="text">
+                <input required ng-model="patient.phone" class="form-control" type="text">
               </div>
             </div>
 
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>TELEFONO OFICINA </label>
-                <input name="phone" required ng-model="patient.office_phone" class="form-control" type="text">
+                <input required ng-model="patient.office_phone" class="form-control" type="text">
               </div>
               <div class="col-sm-12 col-md-12"><br/>
-                <input class="btn btn-primary" type="submit" value="Enviar Contrato"> 
+                <input class="btn btn-primary" type="submit" value="Enviar"> 
               </div>
             </div>
           </form>

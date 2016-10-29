@@ -10,37 +10,37 @@
       </div>
       <div class="row">
         <div class="contact_form col-sm-8 col-md-8">
-          <form name="contactForm" data-ng-submit="add(contract)" novalidate>
+          <form data-ng-submit="add(contract)" novalidate>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>CODIGO CONTRATO</label>
-                <input name="email" required ng-model="contract.code" class="form-control" type="text" value="">
+                <input required ng-model="contract.code" class="form-control" type="text" value="">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>NOMBRE</label>
-                <input name="subject" required ng-model="contract.name" class="form-control" type="text">
+                <input required ng-model="contract.name" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>EMPRESA</label>
-                <input name="phone" required ng-model="contract.company" class="form-control" type="text">
+                <input required ng-model="contract.company" class="form-control" type="text">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>FECHA INICIO</label>
-                <input name="subject" required ng-model="contract.start_date" class="form-control" type="text">
+                <input required ng-model="contract.start_date" readonly class="form-control form_datetime" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>FECHA TERMINACION</label>
-                <input name="phone" required ng-model="contract.end_date" class="form-control" type="text">
+                <input required ng-model="contract.end_date" readonly class="form-control form_datetime" type="text">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-12 col-md-12">
                 <label>ESTADO</label>
-                <input name="phone" required ng-model="contract.state" class="form-control" type="text">
+                <input required ng-model="contract.state" class="form-control" type="text">
               </div>
               <div class="col-sm-12 col-md-12"><br/>
                 <input class="btn btn-primary" type="submit" value="Enviar Contrato"> 

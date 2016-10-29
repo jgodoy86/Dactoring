@@ -1,29 +1,28 @@
 <section>
   <div class="container">
-      <div class="row">
-        <div class="contact_form col-sm-8 col-md-8">
-          <div class="row">
-            <div class="col-sm-6 col-md-6">
-              <h1> Paciente </h1>
-            </div>
-            <div class="col-sm-6 col-md-6">
-                <a ng-href="#/patients/new"> <h3> Nuevo Paciente </h3></a>
-            </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Paciente </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/patients/new"> <h3> Nuevo Paciente </h3></a>
           </div>
         </div>
       </div>
-
-      <table ng-table="table" class="table table-striped">
-          <tr ng-repeat="patient in patients">
-              <td data-title="' NUMERO DE IDENTIFICACION '"> {{patient.number_id}} </td>
-              <td data-title="' TIPO DOCUMENTO'"> {{patient.document_type}} </td>
-              <td data-title="' APELLIDO1'"> {{patient.last_name1}} </td>
-              <td data-title="' NOMBRE1'"> {{patient.first_name1}} </td>
-              <td data-title="' DEPARTAMENTO'"> {{patient.department}} </td>
-              <td data-title="' OCUPACION'"> {{patient.ocupation}} </td>
-              <td data-title="' TELEFONO'"> {{patient.phone}} </td>
-          </tr>
-      </table>
-
     </div>
-  </section>
+
+    <table ng-table="table" class="table table-striped">
+      <tr ng-repeat="patient in patients">
+          <td data-title="' NUMERO DE IDENTIFICACION '"> {{patient.number_id}} </td>
+          <td data-title="' TIPO DOCUMENTO'"> {{patient.document_type}} </td>
+          <td data-title="' APELLIDO1'"> {{patient.last_name1}} </td>
+          <td data-title="' NOMBRE1'"> {{patient.first_name1}} </td>
+          <td data-title="' DEPARTAMENTO'"> {{patient.department}} </td>
+          <td data-title="' OCUPACION'"> {{patient.ocupation}} </td>
+          <td data-title="' TELEFONO'"> {{patient.phone}} </td>
+      </tr>
+    </table>
+  </div>
+</section>

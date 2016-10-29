@@ -1,0 +1,25 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Suministros </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/supplies/new"> <h3> Agregar Suministro </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+      <tr ng-repeat="supply in supplies">
+        <td data-title="'CODIGO ANATO'">{{supply.anato_code}}</td>
+        <td data-title="'FORMA FARMACEUTICA'">{{supply.farmaceutic_form_code}}</td>
+        <td data-title="'MEDICAMENTO CONTROL'"> {{supply.control_code }} </td>
+        <td data-title="'POS'"> {{supply.pos_code }} </td>
+      </tr>
+    </table>
+  </div>
+</section>

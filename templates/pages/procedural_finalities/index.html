@@ -1,0 +1,23 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Finalidad Procedimiento </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/procedural_finalities/new"> <h3> Agregar Finalidad Procedimiento </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="procedural_finality in procedural_finalities">
+            <td data-title="' CÓDIGO'"> {{procedural_finality.code}} </td>
+            <td data-title="' NOMBRE'"> {{procedural_finality.name}} </td>
+        </tr>
+    </table>
+  </div>
+</section>

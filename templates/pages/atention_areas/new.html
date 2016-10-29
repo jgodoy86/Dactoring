@@ -10,31 +10,31 @@
       </div>
       <div class="row">
         <div class="contact_form col-sm-8 col-md-8">
-          <form name="contactForm" data-ng-submit="add(atention_area)" novalidate>
+          <form data-ng-submit="add(atention_area)" novalidate>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>CODIGO EMPRESA </label>
-                <input name="subject" required ng-model="atention_area.company_code" class="form-control" type="text">
+                <input required ng-model="atention_area.company_code" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>CODIGO PABELLON </label>
-                <input name="phone" required ng-model="atention_area.pabillion_code" class="form-control" type="text">
+                <input required ng-model="atention_area.pabillion_code" class="form-control" type="text">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>CODIGO AREA</label>
-                <input name="subject" required ng-model="atention_area.area_code" class="form-control" type="text">
+                <input required ng-model="atention_area.area_code" class="form-control" type="text">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>NOMBRE AREA </label>
-                <input name="phone" required ng-model="atention_area.area_name" class="form-control" type="text">
+                <input required ng-model="atention_area.area_name" class="form-control" type="text">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>TIPO </label>
-                <select name="subject" required ng-model="atention_area.type" class="form-control" type="text">
+                <select required ng-model="atention_area.atention_type" class="form-control" type="text">
                   <option>CONSULTORIO</option>
                   <option>SALAS ESPECIALES</option>
                   <option>QUIROFANO</option>
@@ -42,17 +42,17 @@
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>HORA INICIO</label>
-                <input name="phone" required ng-model="atention_area.start_hour" class="form-control" type="text">
+                <input required ng-model="atention_area.start_hour" class="form-control" type="text" id="timepicker3" placeholder="12:45 PM">
               </div>
             </div>
             <div class="row">
               <div class="col-sm-6 col-md-6">
                 <label>HORA FINAL</label>
-                <input name="subject" required ng-model="atention_area.end_hour" class="form-control" type="text">
+                <input required ng-model="atention_area.end_hour" class="form-control" type="text" id="timepicker4" placeholder="12:45 PM">
               </div>
               <div class="col-sm-6 col-md-6">
                 <label>ESTADO</label>
-                <select name="phone" required ng-model="atention_area.state" class="form-control" type="text">
+                <select required ng-model="atention_area.state" class="form-control" type="text">
                   <option>ACTIVO</option>
                   <option>MANTENIMIENTO</option>
                   <option>INACTIVO</option>

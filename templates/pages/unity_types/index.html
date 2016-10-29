@@ -1,0 +1,22 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Tipos de Unidad </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/unity_types/new"> <h3> Agregar Tipo de Unidad </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <table ng-table="table" class="table table-striped">
+      <tr ng-repeat="unity_type in unity_types">
+        <td data-title="'CODIGO'">{{unity_type.code}}</td>
+        <td data-title="'NOMBRE'">{{unity_type.name}}</td>
+      </tr>
+    </table>
+  </div>
+</section>

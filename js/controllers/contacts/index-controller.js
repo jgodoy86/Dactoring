@@ -8,6 +8,4 @@ angular.module('Dactoring')
   Crud.all('contacts').success(function(data){
   	$scope.contacts = data;
   });
-    
-
 }]);

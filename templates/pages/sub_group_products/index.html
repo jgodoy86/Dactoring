@@ -1,0 +1,24 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <div class="row">
+          <div class="col-sm-6 col-md-6">
+            <h1> Sub Grupo Productos </h1>
+          </div>
+          <div class="col-sm-6 col-md-6">
+              <a ng-href="#/sub_group_products/new"> <h3> Agregar Sub Grupo Productos </h3></a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table ng-table="table" class="table table-striped">
+        <tr ng-repeat="sub_group_product in sub_group_products">
+            <td data-title="' CÓDIGO SUBGRUPO'"> {{sub_group_product.group_code}} </td>
+            <td data-title="' CÓDIGO'"> {{sub_group_product.code}} </td>
+            <td data-title="' NOMBRE'"> {{sub_group_product.name}} </td>
+        </tr>
+    </table>
+  </div>
+</section>

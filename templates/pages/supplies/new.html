@@ -1,0 +1,67 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Suministro </h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/supplies"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form data-ng-submit="add(supply)" required>
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO ANATOFARMACOLÓGICO </label>
+                  <input ng-model="supply.anato_code" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> FORMA FARMACEUTICA </label>
+                  <input ng-model="supply.farmaceutic_form_code" class="form-control"  required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> PRINCIPIO ACTIVO </label>
+                  <input ng-model="supply.active_principle_code" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> CONCENTRACIÓN </label>
+                  <input ng-model="supply.concentration_code" class="form-control"  required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO ATC </label>
+                  <input ng-model="supply.atc_code" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO RIPS </label>
+                  <input ng-model="supply.rips_code" class="form-control"  required>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-sm-6 col-md-6">
+                  <label> MEDICAMENTO DE CONTROL </label>
+                  <input ng-model="supply.control_code" class="form-control" required>
+                </div>
+                <div class="col-sm-6 col-md-6">
+                  <label> CÓDIGO RIPS </label>
+                  <select ng-model="supply.pos_code" class="form-control"  required>
+                    <option>SI</option>
+                    <option>NO</option>
+                  </select>
+                </div>
+            </div>
+
+            <div class="col-sm-12 col-md-12"><br/>
+              <input class="btn btn-primary" type="submit" value="Enviar"> 
+            </div>
+        </form>
+      </div>
+  </div>
+</section>

@@ -156,6 +156,102 @@ angular.module('Dactoring')
       templateUrl: 'templates/pages/concentrations/new.html',
       controller: 'ConcentrationNewController'
     })
+    .when('/unity_types', {
+      templateUrl: 'templates/pages/unity_types/index.html',
+      controller: 'UnityTypeIndexController'
+    })
+    .when('/unity_types/new', {
+      templateUrl: 'templates/pages/unity_types/new.html',
+      controller: 'UnityTypeNewController'
+    })
+    .when('/unity_measures', {
+      templateUrl: 'templates/pages/unity_measures/index.html',
+      controller: 'UnityMeasureIndexController'
+    })
+    .when('/unity_measures/new', {
+      templateUrl: 'templates/pages/unity_measures/new.html',
+      controller: 'UnityMeasureNewController'
+    })
+    .when('/supplies', {
+      templateUrl: 'templates/pages/supplies/index.html',
+      controller: 'SupplyIndexController'
+    })
+    .when('/supplies/new', {
+      templateUrl: 'templates/pages/supplies/new.html',
+      controller: 'SupplyNewController'
+    })
+    .when('/group_products', {
+      templateUrl: 'templates/pages/group_products/index.html',
+      controller: 'GroupProductIndexController'
+    })
+    .when('/group_products/new', {
+      templateUrl: 'templates/pages/group_products/new.html',
+      controller: 'GroupProductNewController'
+    })
+    .when('/sub_group_products', {
+      templateUrl: 'templates/pages/sub_group_products/index.html',
+      controller: 'SubGroupProductIndexController'
+    })
+    .when('/sub_group_products/new', {
+      templateUrl: 'templates/pages/sub_group_products/new.html',
+      controller: 'SubGroupProductNewController'
+    })
+    .when('/brands', {
+      templateUrl: 'templates/pages/brands/index.html',
+      controller: 'BrandIndexController'
+    })
+    .when('/brands/new', {
+      templateUrl: 'templates/pages/brands/new.html',
+      controller: 'BrandNewController'
+    })
+    .when('/storages', {
+      templateUrl: 'templates/pages/storages/index.html',
+      controller: 'StorageIndexController'
+    })
+    .when('/storages/new', {
+      templateUrl: 'templates/pages/storages/new.html',
+      controller: 'StorageNewController'
+    })
+    .when('/products', {
+      templateUrl: 'templates/pages/products/index.html',
+      controller: 'ProductIndexController'
+    })
+    .when('/products/new', {
+      templateUrl: 'templates/pages/products/new.html',
+      controller: 'ProductNewController'
+    })
+    .when('/rip_groups', {
+      templateUrl: 'templates/pages/rip_groups/index.html',
+      controller: 'RipGroupIndexController'
+    })
+    .when('/rip_groups/new', {
+      templateUrl: 'templates/pages/rip_groups/new.html',
+      controller: 'RipGroupNewController'
+    })
+    .when('/procedural_types', {
+      templateUrl: 'templates/pages/procedural_types/index.html',
+      controller: 'ProceduralTypeIndexController'
+    })
+    .when('/procedural_types/new', {
+      templateUrl: 'templates/pages/procedural_types/new.html',
+      controller: 'ProceduralTypeNewController'
+    })
+    .when('/procedural_finalities', {
+      templateUrl: 'templates/pages/procedural_finalities/index.html',
+      controller: 'ProceduralFinalityIndexController'
+    })
+    .when('/procedural_finalities/new', {
+      templateUrl: 'templates/pages/procedural_finalities/new.html',
+      controller: 'ProceduralFinalityNewController'
+    })
+    .when('/procedures', {
+      templateUrl: 'templates/pages/procedures/index.html',
+      controller: 'ProcedureIndexController'
+    })
+    .when('/procedures/new', {
+      templateUrl: 'templates/pages/procedures/new.html',
+      controller: 'ProcedureNewController'
+    })
     .otherwise({
       redirectTo: '/'
     });

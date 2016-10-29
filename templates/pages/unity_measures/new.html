@@ -1,0 +1,38 @@
+<section>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6 col-md-6">
+        <h1> Unidad de Medida</h1>
+      </div>
+      <div class="col-sm-6 col-md-6">
+        <a href="#/unity_measures"> <h3>Volver</h3> </a>
+      </div>
+    </div>
+    <div class="row">
+      <div class="contact_form col-sm-8 col-md-8">
+        <form data-ng-submit="add(unity_measure)" required>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO </label>
+                <input ng-model="unity_measure.code" class="form-control" required>
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> NOMBRE </label>
+                <input ng-model="unity_measure.name" class="form-control"  required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO DE TIPO DE UNIDAD </label>
+                <input ng-model="unity_measure.code_unity_type" class="form-control"  required>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <input class="btn btn-primary" type="submit" value="Enviar"> 
+              </div>
+            </div>
+        </form>
+      </div>
+  </div>
+</section>

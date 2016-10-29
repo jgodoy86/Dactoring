@@ -1,0 +1,146 @@
+<section>
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-6">
+          <h1> Producto </h1>
+        </div>
+        <div class="col-sm-6 col-md-6">
+          <a href="#/products"> <h3>Volver</h3> </a>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="contact_form col-sm-8 col-md-8">
+          <form data-ng-submit="add(product)" novalidate>
+
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO PRODUCTO </label>
+                <input required ng-model="product.code" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> NOMBRE </label>
+                <input required ng-model="product.name" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> GRUPO </label>
+                <input required ng-model="product.group" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> SUB GRUPO </label>
+                <input required ng-model="product.sub_group" class="form-control" type="text">
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> MARCA </label>
+                <input required ng-model="product.brand" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> REGISTRO INVIMA </label>
+                <input required ng-model="product.invima_reg" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO CUM </label>
+                <input required ng-model="product.cum_code" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> CÓDIGO ANATO </label>
+                <input required ng-model="product.anato_code" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label>PRINCIO ACTIVO  </label>
+                <input required ng-model="product.active_princio" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label>FORMA   </label>
+                <input required ng-model="product.form" class="form-control" type="text">
+              </div>
+            </div>
+ 
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label>CONCENTRACIÓN </label>
+                <input required ng-model="product.concentration" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> POS</label>
+                <input required ng-model="product.pos" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> UNIDAD DE COMPRA </label>
+                <input required ng-model="product.unity_buy" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> FRACCIÓN UNIDAD DE COMPRA </label>
+                <input required ng-model="product.unity_buy_fraction" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CONTENIDO </label>
+                <input required ng-model="product.content" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> UNIDAD </label>
+                <input required ng-model="product.unity" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> UNIDAD DE APLICACIÓN </label>
+                <input required ng-model="product.app_unity" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label>UNIDAD DE FACTURACIÓN </label>
+                <input required ng-model="product.facturation_unity" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> CONDICIÓN DE ALMACENAJE </label>
+                <input required ng-model="product.storage_condition" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> REUSO  </label>
+                <input required ng-model="product.reuse" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-6 col-md-6">
+                <label> PORCENTAJE DE IVA </label>
+                <input required ng-model="product.iva_percentage" class="form-control" type="text">
+              </div>
+              <div class="col-sm-6 col-md-6">
+                <label> REGULADO </label>
+                <input required ng-model="product.regulation" class="form-control" type="text">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-sm-12 col-md-12"><br/>
+                <input class="btn btn-primary" type="submit" value="Enviar"> 
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
