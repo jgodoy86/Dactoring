@@ -11,5 +11,5 @@ angular.module('Dactoring')
   }
 }])
 .constant("URL", {
-  LINK: { dev: 'http://dactoring-sammx343.c9users.io:8080/api/v1', prod: 'http://revapplution.herokuapp.com/api/v1' }.dev
+  LINK: { dev: 'http://dactoring-sammx343.c9users.io:8080/api/v1', prod: 'http://dactoring.herokuapp.com/api/v1' }.prod
 });
